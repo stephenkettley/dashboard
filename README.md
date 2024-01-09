@@ -1,2 +1,2 @@
-# dashboard
-A basic dashboard project built using React
+# Dashboard
+A basic dashboard project built using React.
