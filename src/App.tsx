@@ -1,10 +1,19 @@
 import "./App.css";
+import InfoCard from "./components/InfoCard";
+import Menu from "./components/Menu";
+import Orders from "./components/Orders";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <>
-      <h1>dashboard project</h1>
-    </>
+    <div className="container">
+      <Menu />
+      <Welcome />
+      <InfoCard cardType="balance" />
+      <InfoCard cardType="drivers" />
+      <InfoCard cardType="vehicles" />
+      <Orders />
+    </div>
   );
 }
 
