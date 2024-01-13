@@ -1,4 +1,4 @@
-import styles from "./Orders.module.css";
+import styles from "./Orders.module.scss";
 
 const Orders = () => {
   return <div className={styles["orders-container"]}></div>;

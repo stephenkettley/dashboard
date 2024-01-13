@@ -1,7 +1,7 @@
 import { DiAptana, DiGhostSmall, DiStreamline } from "react-icons/di";
 import { IoLogOutOutline } from "react-icons/io5";
 import { TiFolderOpen, TiShoppingCart } from "react-icons/ti";
-import styles from "./Menu.module.css";
+import styles from "./Menu.module.scss";
 
 const Menu = () => {
   return (

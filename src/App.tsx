@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import InfoCard from "./components/InfoCard";
 import Menu from "./components/Menu";
 import Orders from "./components/Orders";
