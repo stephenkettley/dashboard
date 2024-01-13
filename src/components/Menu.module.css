@@ -4,4 +4,53 @@
     background-color: rgb(255, 255, 255);
   }
   
-  
+.logo {
+  height: 200px;
+  width: 300px;
+  pointer-events: none;
+}
+
+.line {
+  border: 0.05px solid rgb(198, 198, 198);
+  width: 300px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 50px;
+  border-radius: 20px;
+  width: 250px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color:#00704A;
+  color: white;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
