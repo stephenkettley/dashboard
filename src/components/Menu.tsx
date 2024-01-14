@@ -14,7 +14,7 @@ const Menu = () => {
         />
         <hr className={styles.line}></hr>
 
-        <div className={styles["menu-options"]}>
+        <ul className={styles["menu-options"]}>
           <button>
             <DiGhostSmall className={styles.icon}></DiGhostSmall>
             Dashboard
@@ -44,7 +44,7 @@ const Menu = () => {
             <IoLogOutOutline className={styles.icon} />
             Logout
           </button>
-        </div>
+        </ul>
       </div>
     </div>
   );
