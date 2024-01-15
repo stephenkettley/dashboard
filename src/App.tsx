@@ -9,18 +9,23 @@ function App() {
     <div className="container">
       <Menu />
       <Welcome />
-      <InfoCard cardType="balance" amount={1111} icon="WALLET" action="TOPUP" />
+      <InfoCard
+        cardType="balance"
+        amount="R3124,55"
+        icon="WALLET"
+        action="Top Up"
+      />
       <InfoCard
         cardType="drivers"
-        amount={2222}
+        amount="1346"
         icon="LICENCE"
-        action="+DRIVER"
+        action="+ Add Driver"
       />
       <InfoCard
         cardType="vehicles"
-        amount={3333}
+        amount="154"
         icon="CAR"
-        action="+VEHICLE"
+        action="+ Add Vehicle"
       />
       <Orders />
     </div>

@@ -1,8 +1,9 @@
 import styles from "./InfoCard.module.scss";
+import Button from "./UI/Button";
 
 export default function InfoCard(props: {
   cardType: string;
-  amount: number;
+  amount: string;
   icon: string;
   action: string;
 }) {
@@ -11,13 +12,13 @@ export default function InfoCard(props: {
     <div className={`${styles[card]}`}>
       <div className={styles["info-card-top"]}>
         <p>{props.icon}</p>
-        <p>{props.action}</p>
+        <Button text={props.action}></Button>
       </div>
       <div className={styles["info-card-bottom"]}>
-        <p>
+        <p className={styles.description}>
           {props.cardType.charAt(0).toUpperCase() + props.cardType.slice(1)}
         </p>
-        <p className={styles.amount}>{props.amount}</p>
+        <h2 className={styles.amount}>{props.amount}</h2>
       </div>
     </div>
   );

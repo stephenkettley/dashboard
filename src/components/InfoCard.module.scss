@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
 }
   
 .drivers {
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
   }
   
 .vehicles {
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
   }
   
 p {
@@ -47,6 +47,7 @@ p {
 .info-card-bottom {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
 }
 
@@ -54,4 +55,13 @@ p {
   font-size: 40px;
   margin: 0;
   font-weight: bold;
+}
+
+h2 {
+  color: black;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 0;
 }

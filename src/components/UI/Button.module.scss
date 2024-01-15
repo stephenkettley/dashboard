@@ -1,0 +1,14 @@
+.action {
+    background-color:#00704A;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: 0.2s all ease;
+}
+
+.action:hover {
+    background-color: #00422c;
+    transform: scale(0.98);
+}

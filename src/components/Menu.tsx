@@ -15,27 +15,27 @@ const Menu = () => {
         <hr className={styles.line}></hr>
 
         <ul className={styles["menu-options"]}>
-          <button>
+          <button className={styles["menu-button"]}>
             <DiGhostSmall className={styles.icon}></DiGhostSmall>
             Dashboard
           </button>
 
-          <button>
+          <button className={styles["menu-button"]}>
             <DiStreamline className={styles.icon}></DiStreamline>
             Future Orders
           </button>
 
-          <button>
+          <button className={styles["menu-button"]}>
             <TiShoppingCart className={styles.icon} />
             Place Order
           </button>
 
-          <button>
+          <button className={styles["menu-button"]}>
             <TiFolderOpen className={styles.icon} />
             History
           </button>
 
-          <button>
+          <button className={styles["menu-button"]}>
             <DiAptana className={styles.icon}></DiAptana>
             Settings
           </button>
