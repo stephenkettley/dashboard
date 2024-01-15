@@ -1,24 +1,20 @@
 import styles from "./InfoCard.module.scss";
-import Button from "./UI/Button";
+import InfoCardIcon from "./InfoCardIcon";
+import Button from "./UI/Buttons/ActionButton";
 
-export default function InfoCard(props: {
-  cardType: string;
-  amount: string;
-  icon: string;
-  action: string;
-}) {
-  const card = props.cardType;
+export default function InfoCard({ cardType, amount, icon, action }) {
+  const card = cardType;
   return (
     <div className={`${styles[card]}`}>
       <div className={styles["info-card-top"]}>
-        <p>{props.icon}</p>
-        <Button text={props.action}></Button>
+        <InfoCardIcon icon={icon}></InfoCardIcon>
+        <Button text={action}></Button>
       </div>
       <div className={styles["info-card-bottom"]}>
         <p className={styles.description}>
-          {props.cardType.charAt(0).toUpperCase() + props.cardType.slice(1)}
+          {cardType.charAt(0).toUpperCase() + cardType.slice(1)}
         </p>
-        <h2 className={styles.amount}>{props.amount}</h2>
+        <h2 className={styles.amount}>{amount}</h2>
       </div>
     </div>
   );

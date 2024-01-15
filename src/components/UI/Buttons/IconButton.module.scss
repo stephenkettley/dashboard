@@ -1,0 +1,23 @@
+.menu-button {
+    background-color: white;
+    color: black;
+    padding: 10px 50px;
+    border-radius: 20px;
+    width: 80%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;;
+    display: flex;
+    justify-content: left;
+    font: {
+      size: 20px;
+    }
+    margin-bottom: 15px;
+  }
+  
+  .menu-button:hover, .logout:hover {
+    background-color:#00704A;
+    color: white;
+  }
+

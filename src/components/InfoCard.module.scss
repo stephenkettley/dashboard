@@ -8,6 +8,19 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    transition: all 0.2s ease;
+}
+
+.balance:hover {
+  transform: scale(1.02);
+}
+
+.drivers:hover {
+  transform: scale(1.02);
+}
+
+.vehicles:hover {
+  transform: scale(1.02);
 }
   
 .drivers {
@@ -20,6 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    transition: all 0.2s ease;
   }
   
 .vehicles {
@@ -33,6 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    transition: all 0.2s ease;
   }
   
 p {
@@ -52,16 +67,14 @@ p {
 }
 
 .amount {
-  font-size: 40px;
+  font-size: 50px;
   margin: 0;
   font-weight: bold;
-}
-
-h2 {
   color: black;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 0;
 }
+

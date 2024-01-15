@@ -1,6 +1,11 @@
-import { DiAptana, DiGhostSmall, DiStreamline } from "react-icons/di";
-import { IoLogOutOutline } from "react-icons/io5";
-import { TiFolderOpen, TiShoppingCart } from "react-icons/ti";
+import IconButton from "./UI/Buttons/IconButton";
+import DashboardIcon from "./UI/Icons/DashboardIcon";
+import FutureOrdersIcon from "./UI/Icons/FutureOrdersIcon";
+import HistoryIcon from "./UI/Icons/HistoryIcon";
+import LogoutIcon from "./UI/Icons/LogoutIcon";
+import PlaceOrderIcon from "./UI/Icons/PlaceOrderIcon";
+import SettingsIcon from "./UI/Icons/SettingsIcon";
+
 import styles from "./Menu.module.scss";
 
 const Menu = () => {
@@ -14,37 +19,14 @@ const Menu = () => {
         />
         <hr className={styles.line}></hr>
 
-        <ul className={styles["menu-options"]}>
-          <button className={styles["menu-button"]}>
-            <DiGhostSmall className={styles.icon}></DiGhostSmall>
-            Dashboard
-          </button>
-
-          <button className={styles["menu-button"]}>
-            <DiStreamline className={styles.icon}></DiStreamline>
-            Future Orders
-          </button>
-
-          <button className={styles["menu-button"]}>
-            <TiShoppingCart className={styles.icon} />
-            Place Order
-          </button>
-
-          <button className={styles["menu-button"]}>
-            <TiFolderOpen className={styles.icon} />
-            History
-          </button>
-
-          <button className={styles["menu-button"]}>
-            <DiAptana className={styles.icon}></DiAptana>
-            Settings
-          </button>
-
-          <button className={styles.logout}>
-            <IoLogOutOutline className={styles.icon} />
-            Logout
-          </button>
-        </ul>
+        <div className={styles["menu-options"]}>
+          <IconButton icon={DashboardIcon}>Dashboard</IconButton>
+          <IconButton icon={FutureOrdersIcon}>Future Orders</IconButton>
+          <IconButton icon={PlaceOrderIcon}>Place Order</IconButton>
+          <IconButton icon={HistoryIcon}>History</IconButton>
+          <IconButton icon={SettingsIcon}>Settings</IconButton>
+          <IconButton icon={LogoutIcon}>Logout</IconButton>
+        </div>
       </div>
     </div>
   );

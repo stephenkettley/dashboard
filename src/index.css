@@ -13,4 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.menu-icons {
+  font-size: 35px;
+  margin-right: 45px;
+}
+
+.info-icons {
+  color: black;
+  font-size: 35px;
+}
 
