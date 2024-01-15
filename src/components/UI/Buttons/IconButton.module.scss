@@ -1,4 +1,4 @@
-.menu-button {
+.menu-button, .logout-menu-button {
     background-color: white;
     color: black;
     padding: 10px 50px;
@@ -16,8 +16,14 @@
     margin-bottom: 15px;
   }
   
-  .menu-button:hover, .logout:hover {
+  .menu-button:hover, .logout-menu-button:hover {
     background-color:#00704A;
     color: white;
   }
+
+.logout-menu-button {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+
 
