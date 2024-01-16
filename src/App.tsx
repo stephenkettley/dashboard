@@ -1,17 +1,18 @@
 import "./App.scss";
-import InfoCard from "./components/InfoCard";
-import Menu from "./components/Menu";
-import Orders from "./components/Orders";
-import BalanceIcon from "./components/UI/Icons/BalanceIcon";
-import DriversIcon from "./components/UI/Icons/DriversIcon";
-import VehiclesIcon from "./components/UI/Icons/VehiclesIcon";
-import Welcome from "./components/Welcome";
-
+// import InfoCard from "./components/InfoCard";
+// import Menu from "./components/Menu";
+// import Orders from "./components/Orders";
+// import BalanceIcon from "./components/UI/Icons/BalanceIcon";
+// import DriversIcon from "./components/UI/Icons/DriversIcon";
+// import VehiclesIcon from "./components/UI/Icons/VehiclesIcon";
+// import Welcome from "./components/Welcome";
+import AddDriver from "./components/AddDriver";
 function App() {
   return (
     <>
+      <AddDriver></AddDriver>
       <div className="container">
-        <Menu />
+        {/* <Menu />
         <Welcome />
         <InfoCard
           cardType="balance"
@@ -31,7 +32,7 @@ function App() {
           icon={VehiclesIcon}
           action="+ Add Vehicle"
         />
-        <Orders />
+        <Orders /> */}
       </div>
     </>
   );

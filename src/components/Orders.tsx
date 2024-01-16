@@ -1,15 +1,13 @@
-// import orderItems from "../order-items";
-// import OrderHeader from "./OrderHeader";
-// import OrderRow from "./OrderRow";
-// import styles from "./Orders.module.scss";
-// import Button from "./UI/Buttons/ActionButton";
-
+import orderItems from "../order-items";
+import OrderHeader from "./OrderHeader";
+import OrderRow from "./OrderRow";
 import styles from "./Orders.module.scss";
+import Button from "./UI/Buttons/ActionButton";
 
 const Orders = () => {
   return (
     <div className={styles["orders-container"]}>
-      {/* <div className={styles.header}>
+      <div className={styles.header}>
         <h1>Today's Orders</h1>
         <Button className="orders" text="Place Order"></Button>
       </div>
@@ -26,7 +24,7 @@ const Orders = () => {
             status={order.status}
           ></OrderRow>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
