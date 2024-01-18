@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.scss";
-import AddDriverForm from "./components/AddDriverForm";
-import AddVehicleForm from "./components/AddVehicleForm";
+import AddDriverForm from "./components/Form/AddDriverForm";
+import AddVehicleForm from "./components/Form/AddVehicleForm";
 import InfoCard from "./components/InfoCard";
 import Menu from "./components/Menu";
 import Orders from "./components/Orders";
@@ -9,68 +9,75 @@ import BalanceIcon from "./components/UI/Icons/BalanceIcon";
 import DriversIcon from "./components/UI/Icons/DriversIcon";
 import VehiclesIcon from "./components/UI/Icons/VehiclesIcon";
 import Welcome from "./components/Welcome";
+
+// simulate figures from a database
+const databaseDrivers = 1234;
+const databaseVehicles = 156;
+
 function App() {
-  const [addDriver, setAddDriver] = useState(false);
-  const [addVehicle, setAddVehicle] = useState(false);
-  const [mainDashboard, setMainDashboard] = useState(true);
+  const [addDriverOpen, setAddDriverOpen] = useState(false);
+  const [addVehicleOpen, setAddVehicleOpen] = useState(false);
 
-  function handleAddDriverClick() {
-    setAddDriver(true);
-    setMainDashboard(false);
+  const [numberDrivers, setNumberDrivers] = useState(databaseDrivers);
+  const [numberVehicles, setNumberVehicles] = useState(databaseVehicles);
+
+  // this is the function to open the add driver modal
+  function handleAddDriver() {
+    setAddDriverOpen(true);
   }
 
-  function handleAddVehicleClick() {
-    setAddVehicle(true);
-    setMainDashboard(false);
+  // this is the function to open the add vehicle modal
+  function handleAddVehicle() {
+    setAddVehicleOpen(true);
   }
 
-  function handleFinishClick() {
-    setAddDriver(false);
-    setAddVehicle(false);
-    setMainDashboard(true);
+  function handleCloseDriver(newDrivers: number) {
+    setNumberDrivers((prevState) => prevState + newDrivers);
+    setAddDriverOpen(false);
+  }
+
+  function handleCloseVehicle(newVehicles: number) {
+    setNumberVehicles((prevState) => prevState + newVehicles);
+    setAddVehicleOpen(false);
   }
   return (
     <>
-      {addDriver && (
-        <AddDriverForm
-          addType="driver"
-          onFinishClick={handleFinishClick}
-        ></AddDriverForm>
-      )}
-      {addVehicle && (
-        <AddVehicleForm
-          addType="vehicle"
-          onFinishClick={handleFinishClick}
-        ></AddVehicleForm>
-      )}
-      {mainDashboard && (
-        <div className="container">
-          <Menu />
-          <Welcome />
-          <InfoCard
-            cardType="balance"
-            amount={`3154,54`}
-            icon={BalanceIcon}
-            action="Top Up"
-            onAddDriverClick={handleAddDriverClick}
-          />
-          <InfoCard
-            cardType="drivers"
-            amount={1346}
-            icon={DriversIcon}
-            action="+ Add Driver"
-            onAddDriverClick={handleAddDriverClick}
-          />
-          <InfoCard
-            cardType="vehicles"
-            amount={154}
-            icon={VehiclesIcon}
-            action="+ Add Vehicle"
-            onAddDriverClick={handleAddVehicleClick}
-          />
-          <Orders />
-        </div>
-      )}
+      <AddDriverForm
+        addType="driver"
+        isOpen={addDriverOpen}
+        onClose={handleCloseDriver}
+      ></AddDriverForm>
+      <AddVehicleForm
+        addType="vehicle"
+        isOpen={addVehicleOpen}
+        onClose={handleCloseVehicle}
+      ></AddVehicleForm>
+
+      <div className="container">
+        <Menu />
+        <Welcome />
+        <InfoCard
+          cardType="balance"
+          amount={`3154,54`}
+          icon={BalanceIcon}
+          action="Top Up"
+        />
+        <InfoCard
+          cardType="drivers"
+          amount={numberDrivers}
+          icon={DriversIcon}
+          action="+ Add Driver"
+          onActionButtonClicked={handleAddDriver}
+        />
+        <InfoCard
+          cardType="vehicles"
+          amount={numberVehicles}
+          icon={VehiclesIcon}
+          action="+ Add Vehicle"
+          onActionButtonClicked={handleAddVehicle}
+        />
+        <Orders />
+      </div>
     </>
   );
 }

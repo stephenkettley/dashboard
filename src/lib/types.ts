@@ -24,3 +24,6 @@ export const addVehicleSchema = z.object({
 });
 
 export type TAddVehicleSchema = z.infer<typeof addVehicleSchema>;
+
+
+// refine, transform, super refine

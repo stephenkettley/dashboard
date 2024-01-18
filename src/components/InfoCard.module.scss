@@ -11,17 +11,17 @@
     transition: all 0.2s ease;
 }
 
-.balance:hover {
-  transform: scale(1.02);
-}
+// .balance:hover {
+//   transform: scale(1.02);
+// }
 
-.drivers:hover {
-  transform: scale(1.02);
-}
+// .drivers:hover {
+//   transform: scale(1.02);
+// }
 
-.vehicles:hover {
-  transform: scale(1.02);
-}
+// .vehicles:hover {
+//   transform: scale(1.02);
+// }
   
 .drivers {
     grid-column: 3 / 4;
@@ -50,9 +50,7 @@
     transition: all 0.2s ease;
   }
   
-p {
-  color: black;
-}
+
 
 .info-card-top {
   display: flex;
@@ -64,6 +62,12 @@ p {
   flex-direction: column;
   align-items: flex-start;
 
+}
+
+.info-card-bottom  {
+  p {
+    color: black
+  }
 }
 
 .amount {

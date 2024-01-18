@@ -1,16 +1,13 @@
 .order-header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     color: rgb(86, 86, 86);
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    gap: 40px
 }
 
 .order-headings {
     color: rgb(121, 121, 121);
-    font-size:16px;
-    margin: 5px;
+    font-size: 16px;
 }
 
 .check {
@@ -18,5 +15,27 @@
     cursor: pointer;
     color: white;
     opacity: 0.5;
+    grid-column-start: 0;
+    grid-column-end: 1;
 }
 
+
+.id {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.litres {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.date {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.status {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}

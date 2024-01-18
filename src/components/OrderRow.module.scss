@@ -1,9 +1,10 @@
 .order-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    height: 100%;
     padding: 0;
+    gap: 40px;
 }
 
 .row-check {
@@ -17,3 +18,37 @@
     background-color: transparent;
     color: #d9e2f1;
   }
+
+.order-row {
+    p {
+        color: black;
+    }
+  }
+
+.checkbox {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    color: rgb(113, 0, 194);
+    background-color: transparent;
+}
+
+.id {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.litres {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.date {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.status {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
