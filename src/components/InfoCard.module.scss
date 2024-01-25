@@ -1,67 +1,33 @@
 .balance {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
     transition: all 0.2s ease;
+    margin: 0;
 }
 
-// .balance:hover {
-//   transform: scale(1.02);
-// }
-
-// .drivers:hover {
-//   transform: scale(1.02);
-// }
-
-// .vehicles:hover {
-//   transform: scale(1.02);
-// }
-  
 .drivers {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0;
     padding: 20px;
     transition: all 0.2s ease;
   }
   
 .vehicles {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-right: 20px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin: 0;
     padding: 20px;
     transition: all 0.2s ease;
   }
   
-
-
 .info-card-top {
   display: flex;
   justify-content: space-between;
-}
-
-.info-card-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
 }
 
 .info-card-bottom  {
@@ -81,4 +47,7 @@
   font-size: 25px;
   margin-bottom: 0;
 }
+
+
+
 

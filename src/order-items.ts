@@ -36,7 +36,8 @@ const orderItems: Order[] = [
         litres: "500L",
         date: "26 January 2022",
         status: "Done"
-    }
+    },
+    
 ]
 
 export default orderItems;

@@ -30,6 +30,8 @@
     grid-column-end: 1;
     color: rgb(113, 0, 194);
     background-color: transparent;
+    accent-color: #00704A;
+    margin: 0 auto;
 }
 
 .id {
@@ -52,3 +54,21 @@
     grid-column-end: 5;
 }
 
+@media (max-width: 1190px) {
+    .order-row {
+        gap: 20px;
+    }
+  }
+  
+  @media (max-width: 870px) {
+    .order-row {
+        gap: 5px;
+    }
+  }
+
+@media (max-width: 750px) {
+    .order-row {
+        grid-template-columns: 0.7fr .7fr 1.5fr 1fr;
+}
+
+}

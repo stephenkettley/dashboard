@@ -11,8 +11,10 @@ export default function IconButton({ children, icon }) {
   }
   return (
     <button className={cssClasses}>
-      <Icon />
-      <span>{children}</span>
+      <div className={styles["icon-word"]}>
+        <Icon />
+        <span>{children}</span>
+      </div>
     </button>
   );
 }

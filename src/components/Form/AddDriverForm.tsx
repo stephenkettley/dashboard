@@ -97,6 +97,7 @@ const AddDriverForm = ({ isOpen, addType, onClose }) => {
         </button>
         <button
           className={`${styles["add-driver-page-button"]} ${styles["back-button"]}`}
+          onClick={() => onClose(addedDriversCount)}
         >
           Back
         </button>

@@ -11,11 +11,23 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
 }
 
 .menu-icons {
   font-size: 25px;
-  margin-right: 45px;
+  margin-right: 2.5rem;
 }
 
 .info-icons {
@@ -23,3 +35,24 @@
   font-size: 35px;
 }
 
+.hamburger-icon{
+
+  display: none;
+}
+
+
+@media (max-width: 1190px) {
+  .menu-icons {
+    display: none;
+  }
+}
+
+
+@media (max-width: 830px) {
+  .hamburger-icon {
+    display: block;
+    color: black;
+    font-size: 35px;
+    margin-right: 3rem;
+  }
+}

@@ -3,17 +3,17 @@
     color: black;
     padding: 10px 50px;
     border-radius: 20px;
-    width: 80%;
+    width: 90%;
     outline: none;
     border: none;
     cursor: pointer;
     align-items: center;;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     font: {
-      size: 1.2rem;
+      size: 0.95rem;
     }
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .menu-button:hover, .logout-menu-button:hover {
@@ -23,7 +23,37 @@
 
 .logout-menu-button {
     margin-top: auto;
-    margin-bottom: 25px;
   }
+
+.icon-word {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+
+@media (max-width: 1500px) {
+  
+  .menu-button, .logout-menu-button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1190px) {
+  .logout-menu-button {
+    margin-top: 0;
+  }
+  .menu-button, .logout-menu-button {
+    height: 2rem;
+    padding: 1rem;
+    margin: 0.25rem;
+    width: auto;
+    font: {
+      size: 0.95rem;
+    }
+  }
+}
+
+
 
 

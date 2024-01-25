@@ -94,6 +94,7 @@ const AddVehicleForm = ({ isOpen, addType, onClose }) => {
         </button>
         <button
           className={`${styles["add-driver-page-button"]} ${styles["back-button"]}`}
+          onClick={() => onClose(addedVehiclesCount)}
         >
           Back
         </button>

@@ -39,3 +39,23 @@
     grid-column-start: 4;
     grid-column-end: 5;
 }
+
+@media (max-width: 1190px) {
+    .order-header {
+        gap: 20px;
+    }
+  }
+  
+@media (max-width: 870px) {
+.order-header {
+    gap: 5px;
+}
+
+}
+
+@media (max-width: 750px) {
+    .order-header {
+        grid-template-columns: 0.7fr .7fr 1.5fr 1fr;
+    }
+    
+}
