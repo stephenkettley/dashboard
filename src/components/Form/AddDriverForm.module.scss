@@ -119,7 +119,10 @@ form {
     font-size: 16px;
 }
 
-.add-driver-modal {
-
+@media (max-width: 420px) {
+    .add-drivers {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 

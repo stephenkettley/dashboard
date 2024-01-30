@@ -52,47 +52,48 @@ function App() {
         isOpen={addVehicleOpen}
         onClose={handleCloseVehicle}
       ></AddVehicleForm>
-
-      <div className="container">
-        <div className="menu-wrapper">
-          <Menu />
-        </div>
-        <div className="welcome-wrapper">
-          <Welcome />
-        </div>
-        <div className="info-wrapper">
-          <div className="info-container">
-            <div className="info-element">
-              <InfoCard
-                cardType="balance"
-                amount={`3154,54`}
-                icon={BalanceIcon}
-                action="Top Up"
-                onActionButtonClicked={handleAddDriver}
-              />
-            </div>
-            <div className="info-element">
-              <InfoCard
-                cardType="drivers"
-                amount={numberDrivers}
-                icon={DriversIcon}
-                action="+ Add Driver"
-                onActionButtonClicked={handleAddDriver}
-              />
-            </div>
-            <div className="info-element">
-              <InfoCard
-                cardType="vehicles"
-                amount={numberVehicles}
-                icon={VehiclesIcon}
-                action="+ Add Vehicle"
-                onActionButtonClicked={handleAddVehicle}
-              />
+      <div className="container-wrapper">
+        <div className="container">
+          <div className="menu-wrapper">
+            <Menu />
+          </div>
+          <div className="welcome-wrapper">
+            <Welcome />
+          </div>
+          <div className="info-wrapper">
+            <div className="info-container">
+              <div className="info-element">
+                <InfoCard
+                  cardType="balance"
+                  amount={`3154,54`}
+                  icon={BalanceIcon}
+                  action="Top Up"
+                  onActionButtonClicked={handleAddDriver}
+                />
+              </div>
+              <div className="info-element">
+                <InfoCard
+                  cardType="drivers"
+                  amount={numberDrivers}
+                  icon={DriversIcon}
+                  action="+ Add Driver"
+                  onActionButtonClicked={handleAddDriver}
+                />
+              </div>
+              <div className="info-element">
+                <InfoCard
+                  cardType="vehicles"
+                  amount={numberVehicles}
+                  icon={VehiclesIcon}
+                  action="+ Add Vehicle"
+                  onActionButtonClicked={handleAddVehicle}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="orders-wrapper">
-          <Orders />
+          <div className="orders-wrapper">
+            <Orders />
+          </div>
         </div>
       </div>
     </>

@@ -4,6 +4,11 @@ body {
   user-select: none;
 }
 
+.container-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .container {
   display: grid;
   grid-template-rows: 1fr 2fr 4fr;
@@ -11,6 +16,7 @@ body {
   gap: 1rem;
   width: 100%;
   margin: 0 auto;
+  border: 2px solid blue;
 }
 
 .info-element {
@@ -56,7 +62,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  .container-wrapper {
+    width: 100%;
   }
 
   .info-element {
@@ -120,6 +130,11 @@ body {
  
 }
 
+@media (max-width: 490px) {
+  .welcome-wrapper {
+    height:  8rem;
+  }
+}
 
 
 
