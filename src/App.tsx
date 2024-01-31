@@ -11,6 +11,7 @@ import VehiclesIcon from "./components/UI/Icons/VehiclesIcon";
 import Welcome from "./components/Welcome";
 
 // simulate figures from a database
+const databaseBalance = 3452.12;
 const databaseDrivers = 1234;
 const databaseVehicles = 156;
 
@@ -58,14 +59,14 @@ function App() {
             <Menu />
           </div>
           <div className="welcome-wrapper">
-            <Welcome />
+            <Welcome userName="Steve" companyName="Company Name" />
           </div>
           <div className="info-wrapper">
             <div className="info-container">
               <div className="info-element">
                 <InfoCard
                   cardType="balance"
-                  amount={`3154,54`}
+                  amount={databaseBalance}
                   icon={BalanceIcon}
                   action="Top Up"
                   onActionButtonClicked={handleAddDriver}

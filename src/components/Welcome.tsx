@@ -1,12 +1,17 @@
 import styles from "./Welcome.module.scss";
 
-const Welcome = () => {
+type WelcomeCardProps = {
+  userName: string;
+  companyName: string;
+};
+
+const Welcome = ({ userName, companyName }: WelcomeCardProps) => {
   return (
     <div className={styles["welcome-container"]}>
       <p className={styles["welcome-back"]}>
-        Welcome Back, John!<span>&#x1F44B;</span>
+        Welcome Back, {userName}!<span>&#x1F44B;</span>
       </p>
-      <h1 className={styles["company-name"]}>Company Name</h1>
+      <h1 className={styles["company-name"]}>{companyName}</h1>
     </div>
   );
 };

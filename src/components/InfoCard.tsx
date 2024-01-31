@@ -2,13 +2,21 @@ import styles from "./InfoCard.module.scss";
 import InfoCardIcon from "./InfoCardIcon";
 import Button from "./UI/Buttons/ActionButton";
 
+interface InfoCardProps {
+  cardType: string;
+  amount: number;
+  icon: () => JSX.Element;
+  action: string;
+  onActionButtonClicked: React.MouseEventHandler<HTMLButtonElement>;
+}
+
 export default function InfoCard({
   cardType,
   amount,
   icon,
   action,
   onActionButtonClicked,
-}) {
+}: InfoCardProps) {
   const card = cardType;
   return (
     <>

@@ -1,9 +1,15 @@
+import { MouseEventHandler } from "react";
 import styles from "./ActionButton.module.scss";
 
-const Button = (props) => {
+interface ButtonProps {
+  text: string;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+}
+
+const Button = ({ text, onClick }: ButtonProps) => {
   return (
-    <button className={styles.action} onClick={props.onClick}>
-      {props.text}
+    <button className={styles.action} onClick={onClick}>
+      {text}
     </button>
   );
 };

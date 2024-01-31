@@ -9,7 +9,11 @@ const Orders = () => {
     <div className={styles["orders-container"]}>
       <div className={styles.header}>
         <h1>Today's Orders</h1>
-        <Button className="orders" text="Place Order"></Button>
+        <Button
+          className="orders"
+          text="Place Order"
+          onClick={() => console.log("place order clicked.")}
+        ></Button>
       </div>
       <p className={styles.total}>1 total</p>
       <div className={styles.orders}>
