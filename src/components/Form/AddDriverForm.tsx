@@ -1,13 +1,19 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { TAddDriverSchema, addDriverSchema } from "../../lib/types";
 import styles from "./AddDriverForm.module.scss";
 
 const AddDriverForm = ({ isOpen, addType, onClose }) => {
   if (!isOpen) return null;
-
+  const firstNameRef = useRef<HTMLInputElement | null>(null);
   const [addedDriversCount, setAddedDriversCount] = useState(0);
+
+  useEffect(() => {
+    if (firstNameRef.current) {
+      firstNameRef.current.focus();
+    }
+  }, []);
 
   const {
     register,
@@ -42,6 +48,7 @@ const AddDriverForm = ({ isOpen, addType, onClose }) => {
               {...register("firstName")}
               type="text"
               placeholder="First Name"
+              ref={firstNameRef}
             ></input>
             {errors.firstName && (
               <p
