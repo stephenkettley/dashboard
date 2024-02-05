@@ -26,18 +26,18 @@ const orderItems: Order[] = [
         status: "Not Started"
     },
     {
-        id: 503,
+        id: 502,
         litres: "500L",
-        date: "25 January 2022",
-        status: "Done"
+        date: "24 January 2022",
+        status: "Not Started"
     },
     {
-        id: 504,
+        id: 502,
         litres: "500L",
-        date: "26 January 2022",
-        status: "Done"
+        date: "24 January 2022",
+        status: "Not Started"
     },
-    
+   
 ]
 
 export default orderItems;

@@ -9,15 +9,17 @@ import SettingsIcon from "./UI/Icons/SettingsIcon";
 import styles from "./Menu.module.scss";
 import HamburgerIcon from "./UI/Icons/HamburgerIcon";
 
+// million-ignore
 const Menu = () => {
   return (
     <div className={styles["menu-container"]}>
       <div className={styles["top-section"]}>
-        <img
+        {/* <img
           className={styles.logo}
-          src="../../../images/starbucks.webp"
+          src="public/images/starbucks_logo.png"
           alt="logo"
-        />
+        /> */}
+        <h2 className={styles.textlogo}>LOGO</h2>
         <hr className={styles.line}></hr>
       </div>
       <div className={styles["burger-options"]}>

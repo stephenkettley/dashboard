@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   user-select: none;
+  height: 100vh;
 }
 
 .container-wrapper {
@@ -15,8 +16,8 @@ body {
   grid-template-columns: 1fr 3fr;
   gap: 1rem;
   width: 100%;
+
   margin: 0 auto;
-  border: 2px solid blue;
 }
 
 .info-element {
@@ -77,20 +78,17 @@ body {
   .info-wrapper {
     width: 95%;
     margin: 0 auto;
-    border: 1px red solid;
     padding: 0;
   }
 
   .welcome-wrapper {
       width: 95%;
       margin: 0 auto;
-      border: 1px red solid;
     }
 
   .orders-wrapper {
       width: 95%;
       margin: 0 auto;
-      border: 1px red solid;
   }
 }
 
@@ -135,6 +133,7 @@ body {
     height:  8rem;
   }
 }
+
 
 
 
