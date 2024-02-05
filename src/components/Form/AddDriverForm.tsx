@@ -10,9 +10,7 @@ const AddDriverForm = ({ isOpen, addType, onClose }) => {
   const [addedDriversCount, setAddedDriversCount] = useState(0);
 
   useEffect(() => {
-    if (firstNameRef.current) {
-      firstNameRef.current.focus();
-    }
+    firstNameRef.current?.focus();
   }, []);
 
   const {
